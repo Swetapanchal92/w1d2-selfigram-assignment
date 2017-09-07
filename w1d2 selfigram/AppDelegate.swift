@@ -5,8 +5,8 @@
 //  Created by Nitin Panchal on 2017-08-10.
 //  Copyright © 2017 Sweta panchal. All rights reserved.
 //
-
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Initialize Parse.
+        // Replace YOUR_APP_ID and URL_TO_YOUR_PARSE_SERVER with the values you chose when you installed your Parse server.
+        let configuration = ParseClientConfiguration { clientConfiguration in
+            clientConfiguration.applicationId = "Snpanchal9913"
+            clientConfiguration.server = "https://my-selfigram.herokuapp.com/parse"
+        }
+        
+        Parse.initialize(with: configuration)
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackground(block: { (success: Bool, error: Error?) -> Void in
+            print("Object has been saved.")
+        })
+
         return true
     }
 
