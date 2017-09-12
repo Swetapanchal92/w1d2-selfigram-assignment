@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		37B3DB92336CC2E5AC5D911A /* Pods_w1d2_selfigram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBA957F8424656532EC82DB /* Pods_w1d2_selfigram.framework */; };
+		9419DCA01F62172200F8468F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DC9F1F62172200F8468F /* ProfileViewController.swift */; };
+		9419DCA21F63451500F8468F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DCA11F63451500F8468F /* User.swift */; };
+		9419DCA41F63459600F8468F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DCA31F63459600F8468F /* Post.swift */; };
+		9419DCA61F6735A900F8468F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DCA51F6735A900F8468F /* Activity.swift */; };
+		9419DCA81F68330200F8468F /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DCA71F68330200F8468F /* ActivityViewController.swift */; };
+		9419DCAA1F68332500F8468F /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DCA91F68332500F8468F /* ActivityCell.swift */; };
 		94ACA61D1F4F97C500CD3159 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ACA61C1F4F97C500CD3159 /* SelfieCell.swift */; };
 		94B6C08A1F4CF0CE00F030EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6C0891F4CF0CE00F030EA /* FeedViewController.swift */; };
 		94D498241F3D21AB003F6351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D498231F3D21AB003F6351 /* AppDelegate.swift */; };
@@ -40,6 +46,12 @@
 /* Begin PBXFileReference section */
 		1B283E1801C84A3CCEC32B5E /* Pods_w1d2_selfigramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_w1d2_selfigramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C147F845B45D39C245663D6 /* Pods-w1d2 selfigramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-w1d2 selfigramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-w1d2 selfigramTests/Pods-w1d2 selfigramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9419DC9F1F62172200F8468F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "../../W2D1 Selfigram/W2D1 Selfigram/ProfileViewController.swift"; sourceTree = "<group>"; };
+		9419DCA11F63451500F8468F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9419DCA31F63459600F8468F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9419DCA51F6735A900F8468F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		9419DCA71F68330200F8468F /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		9419DCA91F68332500F8468F /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		94ACA61C1F4F97C500CD3159 /* SelfieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelfieCell.swift; path = ../SelfieCell.swift; sourceTree = "<group>"; };
 		94B6C0891F4CF0CE00F030EA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		94D498201F3D21AB003F6351 /* w1d2 selfigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w1d2 selfigram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +143,14 @@
 			children = (
 				94D498231F3D21AB003F6351 /* AppDelegate.swift */,
 				94D498271F3D21AB003F6351 /* Main.storyboard */,
+				9419DCA51F6735A900F8468F /* Activity.swift */,
 				94B6C0891F4CF0CE00F030EA /* FeedViewController.swift */,
+				9419DCA11F63451500F8468F /* User.swift */,
+				9419DCA31F63459600F8468F /* Post.swift */,
+				9419DC9F1F62172200F8468F /* ProfileViewController.swift */,
 				94ACA61C1F4F97C500CD3159 /* SelfieCell.swift */,
+				9419DCA71F68330200F8468F /* ActivityViewController.swift */,
+				9419DCA91F68332500F8468F /* ActivityCell.swift */,
 				94D4982A1F3D21AB003F6351 /* Assets.xcassets */,
 				94D4982C1F3D21AB003F6351 /* LaunchScreen.storyboard */,
 				94D4982F1F3D21AB003F6351 /* Info.plist */,
@@ -465,6 +483,12 @@
 			files = (
 				94B6C08A1F4CF0CE00F030EA /* FeedViewController.swift in Sources */,
 				94D498241F3D21AB003F6351 /* AppDelegate.swift in Sources */,
+				9419DCA61F6735A900F8468F /* Activity.swift in Sources */,
+				9419DCA81F68330200F8468F /* ActivityViewController.swift in Sources */,
+				9419DCAA1F68332500F8468F /* ActivityCell.swift in Sources */,
+				9419DCA01F62172200F8468F /* ProfileViewController.swift in Sources */,
+				9419DCA41F63459600F8468F /* Post.swift in Sources */,
+				9419DCA21F63451500F8468F /* User.swift in Sources */,
 				94ACA61D1F4F97C500CD3159 /* SelfieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
